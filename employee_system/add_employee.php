@@ -11,7 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $position      = mysqli_real_escape_string($conn, $_POST['position']);
     $department    = mysqli_real_escape_string($conn, $_POST['department']);
 
-    
     $sql = "INSERT INTO employee (employee_name, position, department)
             VALUES ('$employee_name', '$position', '$department')";
 
